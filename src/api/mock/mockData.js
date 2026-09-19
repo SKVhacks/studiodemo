@@ -110,7 +110,7 @@ const EVENT_SEEDS = [
   [40, 14, "Wedding",              "Tiruppur",                         "07:00", 85000, 0.3],
   [47, 15, "Birthday",             "Dindigul",                         "17:30", 12000, 0],
   [55, 16, "Pre-Wedding",          "Karur Cauvery Bank",               "06:15", 26000, 0],
-  [63, 17, "Engagement",           "Nagercoil",                        "10:00", 0,     0],
+  [63, 17, "Birthday Shoot",           "Chennai",                        "10:00", 0,     0],
   [70, 11, "Baby Shoot",           "Namakkal",                         "10:00", 0,     0],
 
   // ── past ──
