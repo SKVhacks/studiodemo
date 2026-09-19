@@ -1,0 +1,14 @@
+.partial{
+    background-color: blue;
+    color: white;
+}
+
+.paid{
+    background-color: green;
+    color: white;
+}
+
+.pending{
+    background-color: red;
+    color: white;
+}

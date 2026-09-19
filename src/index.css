@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@custom-variant dark (&:where(.dark, .dark *));
+@plugin "daisyui";
+
+
+@theme {
+  --animate-marquee: marquee 15s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+@font-face {
+  font-family: 'mor';
+  src: url('./font/mor.otf');
+} 
+
+* {
+  font-family: "mor";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@theme{
+    --color-core:#6366f1;
+    /* --color-core:orangered; */
+    /* --color-core:#F97316; */
+    --color-auxillary:deeppink;
+    /* --color-auxillary:blue; */
+    --color-terinary:greenyellow;
+    --color-submit:deeppink;
+    --color-submitt:greenyellow;
+    --color-place:deeppink;
+    --color-focus:blue;
+    --color-focusl:white;
+    --color-btn1:red;
+    --color-btn2:red;
+    --color-bread:#6366f1;
+    --color-bar:greenyellow;
+    --color-secondary:blue;
+}
+
+.alert-error{
+  background-color: red;
+  border:none;
+  color: white;
+}
+
+.alert-warning{
+  background-color: #ffbf00;
+  color: black;
+}
+  
+.alert-success{
+  background-color: rgb(60, 255, 0);
+  color: white;
+  border: none;
+}
+
+.alert-welocme{
+  background-color: transparent;
+  border: none;
+}
+
+/* Add this to your index.css or App.css */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+.container {
+  overflow-y: scroll; /* keep scroll functionality */
+  /* Hide scrollbar for Chrome, Safari, Edge */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
+  /* Hide scrollbar for IE/old Edge */
+  -ms-overflow-style: none;
+}
+
