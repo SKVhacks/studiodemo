@@ -159,7 +159,7 @@ const ClientDetail = () => {
                                     <ImWhatsapp className="text-2xl" />
                                 </a>
                             </div>
-                            <div className="px-3 py-3 border-none bg-submit text-white rounded-full hover:scale-105">
+                            <div className="px-3 py-3 border-none bg-indigo-500 text-white rounded-full hover:scale-105">
                                 <a href={`mailto:${client.email}`} target="_blank" rel="noreferrer">
                                     <IoMailUnread className="text-2xl" />
                                 </a>
